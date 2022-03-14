@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models;
+using WebApp.Filters;
 
 namespace WebApp.Controllers
 {
+    [HttpsOnly]
     [Route("api/[controller]")]
     [ApiController]
     public class SuppliersController : ControllerBase

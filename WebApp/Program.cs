@@ -33,6 +33,7 @@ var app = builder.Build();
 
 app.UseDeveloperExceptionPage();
 app.UseMiddleware<TestMiddleware>();
+app.UseHttpsRedirection();
 
 app.UseRouting();
 app.UseEndpoints(endpoints =>
